@@ -8,7 +8,7 @@ services:
     volumes:
       - db:/data/db
   controller:
-    image: "jacobalberty/unifi:${TAG:-latest}"
+    image: "codeninja/unifi:5.10.23U"
     depends_on:
       - mongo
     init: true
